@@ -1,0 +1,75 @@
+✅ Task 1: Linux — Log Analysis & Filtering
+
+Scenario: You are on-call and need to quickly extract useful info from logs.
+
+Problem:
+Given a log file (app.log), find:
+a) The number of ERROR entries
+    cat app.log | grep -i error | wc -l 
+or
+    grep -i error app.log
+
+b) Top 5 IPs triggering the most requests
+    cat app.log | awk -F " " '{print $4}' | sort | uniq -c | sort -grk1 
+c) Show last 20 log lines continuously (like tailing logs)
+      tail -n 20 -f app.log
+
+
+Create a dummy log file or use nginx access log if available.
+
+🐍 Task 2: Python — Parse JSON & Generate a Report
+
+Scenario: A DevOps tool returns JSON output (like aws cli, Prometheus, or Kubernetes response).
+Write a Python script that:
+
+Reads a servers.json file containing server names and CPU usage
+
+Finds servers with CPU > 80%
+
+Prints a summary report
+
+Bonus: Output results to a CSV file.
+
+Key DevOps skills tested: parsing JSON, basic automation, reporting.
+
+🐚 Task 3: Shell Scripting — Monitor Disk Space & Send Alert
+
+Write a shell script disk_alert.sh that:
+
+Checks disk usage for /
+
+If usage > 75%, prints a warning message
+
+Logs the result to a file disk_alert.log with timestamp
+
+Bonus:
+Add email or Slack alert (just echo "would send alert" if email not set).
+
+This is a classic DevOps SRE-style task.
+
+🐧 Task 4: Linux Permissions & Processes
+
+Perform the following on your Linux machine:
+
+Create a new user devuser
+
+Give them permission to execute a script but not edit it
+
+Run a process in the background and redirect logs to a file
+
+View only that process in the process list
+
+Skills this builds: chmod, chown, ps, top, nohup, &, > and 2>&1
+
+☁️ Task 5: Python + Bash — Automate a Repetitive Task
+
+Scenario: You deploy apps often and want a quick script to package logs.
+
+Create a script using both Bash + Python:
+
+Bash script to compress the /var/log directory into a .tar.gz file
+
+Python script to upload the file to AWS S3
+(If you don’t have AWS, simulate by copying to a “backup” folder)
+
+This builds real DevOps automation thinking: Bash for OS tasks, Python for integrations.

@@ -1,0 +1,180 @@
+{
+  "servers": [
+    {
+      "name": "web-server-01",
+      "region": "us-east-1",
+      "cpu": 72,
+      "memory": 65,
+      "status": "running"
+    },
+    {
+      "name": "web-server-02",
+      "region": "us-east-1",
+      "cpu": 88,
+      "memory": 71,
+      "status": "running"
+    },
+    {
+      "name": "web-server-03",
+      "region": "us-west-2",
+      "cpu": 91,
+      "memory": 82,
+      "status": "running"
+    },
+    {
+      "name": "api-server-01",
+      "region": "us-east-1",
+      "cpu": 57,
+      "memory": 49,
+      "status": "running"
+    },
+    {
+      "name": "api-server-02",
+      "region": "us-east-1",
+      "cpu": 63,
+      "memory": 58,
+      "status": "running"
+    },
+    {
+      "name": "api-server-03",
+      "region": "us-west-2",
+      "cpu": 84,
+      "memory": 77,
+      "status": "running"
+    },
+    {
+      "name": "db-server-01",
+      "region": "us-east-1",
+      "cpu": 93,
+      "memory": 89,
+      "status": "running"
+    },
+    {
+      "name": "db-server-02",
+      "region": "us-west-2",
+      "cpu": 79,
+      "memory": 81,
+      "status": "maintenance"
+    },
+    {
+      "name": "db-server-03",
+      "region": "eu-central-1",
+      "cpu": 65,
+      "memory": 73,
+      "status": "running"
+    },
+    {
+      "name": "cache-server-01",
+      "region": "eu-central-1",
+      "cpu": 48,
+      "memory": 52,
+      "status": "running"
+    },
+    {
+      "name": "cache-server-02",
+      "region": "us-east-1",
+      "cpu": 81,
+      "memory": 69,
+      "status": "running"
+    },
+    {
+      "name": "cache-server-03",
+      "region": "us-east-1",
+      "cpu": 56,
+      "memory": 61,
+      "status": "running"
+    },
+    {
+      "name": "auth-server-01",
+      "region": "us-west-2",
+      "cpu": 74,
+      "memory": 67,
+      "status": "running"
+    },
+    {
+      "name": "auth-server-02",
+      "region": "us-west-2",
+      "cpu": 86,
+      "memory": 79,
+      "status": "running"
+    },
+    {
+      "name": "auth-server-03",
+      "region": "eu-central-1",
+      "cpu": 94,
+      "memory": 83,
+      "status": "running"
+    },
+    {
+      "name": "worker-node-01",
+      "region": "us-east-1",
+      "cpu": 59,
+      "memory": 55,
+      "status": "running"
+    },
+    {
+      "name": "worker-node-02",
+      "region": "us-east-1",
+      "cpu": 82,
+      "memory": 78,
+      "status": "running"
+    },
+    {
+      "name": "worker-node-03",
+      "region": "us-east-1",
+      "cpu": 69,
+      "memory": 72,
+      "status": "running"
+    },
+    {
+      "name": "worker-node-04",
+      "region": "us-west-2",
+      "cpu": 95,
+      "memory": 91,
+      "status": "running"
+    },
+    {
+      "name": "worker-node-05",
+      "region": "eu-central-1",
+      "cpu": 62,
+      "memory": 58,
+      "status": "maintenance"
+    },
+    {
+      "name": "monitoring-server-01",
+      "region": "us-east-1",
+      "cpu": 77,
+      "memory": 69,
+      "status": "running"
+    },
+    {
+      "name": "monitoring-server-02",
+      "region": "us-west-2",
+      "cpu": 89,
+      "memory": 85,
+      "status": "running"
+    },
+    {
+      "name": "backup-server-01",
+      "region": "us-east-1",
+      "cpu": 28,
+      "memory": 41,
+      "status": "idle"
+    },
+    {
+      "name": "backup-server-02",
+      "region": "us-east-1",
+      "cpu": 33,
+      "memory": 39,
+      "status": "idle"
+    },
+    {
+      "name": "backup-server-03",
+      "region": "eu-central-1",
+      "cpu": 45,
+      "memory": 44,
+      "status": "idle"
+    }
+  ]
+}
+

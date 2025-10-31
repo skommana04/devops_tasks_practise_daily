@@ -1,0 +1,55 @@
+2025-10-30 09:12:01 INFO  172.16.10.12 User 'john' logged in successfully
+2025-10-30 09:12:03 DEBUG 172.16.10.12 Fetching user profile data
+2025-10-30 09:12:05 INFO  172.16.10.12 Request GET /api/products returned 200
+2025-10-30 09:12:07 INFO  10.0.0.5     Request GET /api/inventory returned 200
+2025-10-30 09:12:10 WARN  10.0.0.5     High memory usage detected: 78%
+2025-10-30 09:12:12 ERROR 192.168.1.14 Database connection timeout
+2025-10-30 09:12:15 INFO  172.16.10.12 Request POST /api/order returned 201
+2025-10-30 09:12:16 DEBUG 172.16.10.12 Order validation successful
+2025-10-30 09:12:18 ERROR 192.168.1.14 Failed to process payment
+2025-10-30 09:12:19 DEBUG 10.0.0.5     Cache refreshed for product list
+2025-10-30 09:12:21 INFO  10.0.0.5     Request GET /api/products returned 200
+2025-10-30 09:12:22 INFO  172.16.10.12 User 'john' logged out
+2025-10-30 09:12:23 DEBUG 172.16.10.12 Session cleaned for user 'john'
+2025-10-30 09:12:25 INFO  172.16.10.12 User 'alice' logged in successfully
+2025-10-30 09:12:28 WARN  10.0.0.5     Disk usage at 85%
+2025-10-30 09:12:30 DEBUG 192.168.1.14 Retrying payment gateway connection
+2025-10-30 09:12:32 INFO  172.16.10.12 Request GET /api/cart returned 200
+2025-10-30 09:12:35 ERROR 172.16.10.12 Failed to fetch user cart
+2025-10-30 09:12:36 INFO  10.0.0.5     Request GET /api/products returned 200
+2025-10-30 09:12:38 INFO  192.168.1.14 Request POST /api/checkout returned 500
+2025-10-30 09:12:40 DEBUG 10.0.0.5     Cache hit for /api/products
+2025-10-30 09:12:42 INFO  172.16.10.12 User 'bob' logged in successfully
+2025-10-30 09:12:45 ERROR 192.168.1.14 Payment gateway unreachable
+2025-10-30 09:12:48 INFO  10.0.0.5     User 'alice' logged out
+2025-10-30 09:12:50 WARN  192.168.1.14 Cache size limit approaching
+2025-10-30 09:12:52 INFO  172.16.10.12 Request GET /api/products returned 200
+2025-10-30 09:12:55 ERROR 172.16.10.12 Null pointer exception while processing request
+2025-10-30 09:12:58 DEBUG 172.16.10.12 Troubleshooting exception details
+2025-10-30 09:13:01 INFO  10.0.0.5     Request GET /api/orders returned 200
+2025-10-30 09:13:04 INFO  10.0.0.5     User 'bob' added item to cart
+2025-10-30 09:13:06 DEBUG 10.0.0.5     Cart updated for user 'bob'
+2025-10-30 09:13:09 WARN  10.0.0.5     CPU usage at 82%
+2025-10-30 09:13:11 ERROR 172.16.10.12 Redis connection lost
+2025-10-30 09:13:12 DEBUG 172.16.10.12 Attempting to reconnect to redis
+2025-10-30 09:13:15 INFO  192.168.1.14 Request GET /api/checkout returned 500
+2025-10-30 09:13:18 INFO  192.168.1.14 Request GET /api/products returned 200
+2025-10-30 09:13:20 WARN  192.168.1.14 Slow API response: 1240ms
+2025-10-30 09:13:22 ERROR 172.16.10.12 Failed to update user profile
+2025-10-30 09:13:25 INFO  10.0.0.5     Request GET /api/users returned 200
+2025-10-30 09:13:28 INFO  172.16.10.12 User 'chris' logged in successfully
+2025-10-30 09:13:29 DEBUG 10.0.0.5     DB connection pool at 80% usage
+2025-10-30 09:13:31 ERROR 192.168.1.14 MySQL deadlock detected
+2025-10-30 09:13:33 WARN  192.168.1.14 High DB latency: 900ms
+2025-10-30 09:13:36 INFO  10.0.0.5     Request GET /api/analytics returned 200
+2025-10-30 09:13:38 DEBUG 10.0.0.5     Analytics cache refreshed
+2025-10-30 09:13:40 INFO  172.16.10.12 Request GET /api/subscriptions returned 200
+2025-10-30 09:13:42 DEBUG 172.16.10.12 Checking subscription status for user
+2025-10-30 09:13:45 ERROR 172.16.10.12 Subscription service timeout
+2025-10-30 09:13:48 INFO  10.0.0.5     Request POST /api/subscriptions returned 201
+2025-10-30 09:13:50 WARN  192.168.1.14 Too many open file handles
+2025-10-30 09:13:52 INFO  172.16.10.12 User 'chris' logged out
+2025-10-30 09:13:55 DEBUG 10.0.0.5     Session cleared on logout
+2025-10-30 09:13:57 ERROR 10.0.0.5     RabbitMQ queue overflow
+2025-10-30 09:14:01 WARN  10.0.0.5     Message broker latency increasing
+2025-10-30 09:14:04 INFO  192.168.1.14 Request GET /api/health returned 200
