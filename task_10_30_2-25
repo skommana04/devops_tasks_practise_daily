@@ -23,9 +23,9 @@ Scenario: A DevOps tool returns JSON output (like aws cli, Prometheus, or Kubern
 Write a Python script that:
 
 Reads a servers.json file containing server names and CPU usage
-
+ refer p1.py file
 Finds servers with CPU > 80%
-
+  refer  p2.py file
 Prints a summary report
 
 Bonus: Output results to a CSV file.

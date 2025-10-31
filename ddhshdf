@@ -1,0 +1,11 @@
+High cpu servers are:
+web-server-02 : 88%
+web-server-03 : 91%
+api-server-03 : 84%
+db-server-01 : 93%
+cache-server-02 : 81%
+auth-server-02 : 86%
+auth-server-03 : 94%
+worker-node-02 : 82%
+worker-node-04 : 95%
+monitoring-server-02 : 89%
