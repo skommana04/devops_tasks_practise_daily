@@ -13,7 +13,7 @@ b) Top 5 IPs triggering the most requests
     cat app.log | awk -F " " '{print $4}' | sort | uniq -c | sort -grk1 
 c) Show last 20 log lines continuously (like tailing logs)
       tail -n 20 -f app.log
-
+----------------------------------------------------------------------------
 
 Create a dummy log file or use nginx access log if available.
 
@@ -27,10 +27,7 @@ Reads a servers.json file containing server names and CPU usage
 Finds servers with CPU > 80%
   refer  p2.py file
 Prints a summary report
-
-Bonus: Output results to a CSV file.
-
-Key DevOps skills tested: parsing JSON, basic automation, reporting.
+---------------------------------------------------------------
 
 🐚 Task 3: Shell Scripting — Monitor Disk Space & Send Alert
 
@@ -42,26 +39,32 @@ If usage > 75%, prints a warning message
 
 Logs the result to a file disk_alert.log with timestamp
 
-Bonus:
-Add email or Slack alert (just echo "would send alert" if email not set).
+the three tasks can be found in disk_alert.sh and alert.log
+----------------------------------------------------------------------
 
-This is a classic DevOps SRE-style task.
+ Task 4: Linux Permissions & Processes
 
-🐧 Task 4: Linux Permissions & Processes
-
-Perform the following on your Linux machine:
-
-Create a new user devuser
+Create a new user devuser ----adduser devuser
 
 Give them permission to execute a script but not edit it
+sudo chmod o+rx alert.log --- i am giving permission to others(devuser)to read and execute the alert.log but not write permission
 
 Run a process in the background and redirect logs to a file
+ping www.google.com > ping.log 2>&1 & (or)
+ping www.google.com > /dev/null 2>&1 &
+the log normally appear on terminal..thats y taking them in a file or you can send them to null (you cant see the logsin any file) 2>&1 means sending stderr logs to the same log where stdout logs are there 
+next &  meaning it is running in background
 
 View only that process in the process list
+ps aux | grep pid(7158) or
+ps -ef | grep (7158)
+
+if we need to stop the process --- kill 7158  it will stop
 
 Skills this builds: chmod, chown, ps, top, nohup, &, > and 2>&1
+---------------------------------------------------------------------
 
-☁️ Task 5: Python + Bash — Automate a Repetitive Task
+Task 5: Python + Bash — Automate a Repetitive Task
 
 Scenario: You deploy apps often and want a quick script to package logs.
 
@@ -69,7 +72,11 @@ Create a script using both Bash + Python:
 
 Bash script to compress the /var/log directory into a .tar.gz file
 
+tar -cvzf filename.tar.gz /var/log
+
 Python script to upload the file to AWS S3
 (If you don’t have AWS, simulate by copying to a “backup” folder)
+
+this script will be found in backup.py
 
 This builds real DevOps automation thinking: Bash for OS tasks, Python for integrations.

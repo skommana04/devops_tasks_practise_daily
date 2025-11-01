@@ -1,0 +1,8 @@
+#!/bin/bash
+
+a=$(df -h / | tail -1 | awk -F " " '{print $5}')
+
+echo $a
+#if a > 75%
+#	print("warning")
+#
