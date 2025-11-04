@@ -1,0 +1,71 @@
+Task 1: Log Analyzer with Alerts (Bash)
+
+Write a script that:
+
+Reads /var/log/syslog (or any .log file you choose)
+
+Counts how many times the keyword error appears (case-insensitive)
+
+If count > 10, print “⚠️ High error count”
+
+Store the result in a file with timestamp: log_alerts.txt
+--------------------------------------------------------------------------------------
+
+Task 2: Python - Convert Logs to JSON
+
+Take a app.log file of lines like:
+
+2025-10-30 12:01:22 INFO User logged in
+2025-10-30 12:02:10 ERROR Failed to connect to DB
+
+
+Write Python code to convert this into a JSON array like:
+
+[
+  {"date": "2025-10-30", "time": "12:01:22", "level": "INFO", "message": "User logged in"},
+  {"date": "2025-10-30", "time": "12:02:10", "level": "ERROR", "message": "Failed to connect to DB"}
+]
+
+
+Bonus: Output to a file logs.json
+----------------------------------------------------------------------------------------------------------
+Task 3: Run Script Every 1 Minute (Cron Job)
+
+Create a script disk_check.sh that checks disk usage
+
+If usage > 70%, print “Disk High” into /tmp/disk_status.log
+
+Schedule Cron to run every minute
+
+Bonus: Redirect both stdout & stderr to a single logfile.
+---------------------------------------------------------------------------------
+Task 4: Permissions & Ownership Challenge
+
+Perform the below steps:
+
+Step	Requirement
+1	Create user deploy
+2	Create folder /opt/app
+3	Only deploy user has read+write, others no access
+4	Create a script inside /opt/app/run.sh that prints “App Running”
+5	Allow devuser to execute the script but not read/edit it
+
+Bonus: Use chmod +x and chmod o+x
+---------------------------------------------------------------------------
+Task 5: Network Troubleshooting Script (Bash)
+
+Write a script:
+
+Takes a domain as an input (e.g., google.com)
+
+Pings the domain 3 times
+
+If ping fails, prints:
+"Network down or host unreachable"
+
+Else print:
+"Network is OK"
+
+Bonus: Log output to network.log with date
+
+-----------------------------------------------------------------------------------------------
