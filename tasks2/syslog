@@ -1,0 +1,26 @@
+2025-11-01 08:22:14 INFO AuthService User login successful for user=alex
+2025-11-01 08:22:15 WARN PaymentService Payment latency high: 620ms
+2025-11-01 08:22:16 INFO InventoryService Stock check triggered for product_id=8842
+2025-11-01 08:22:19 ERROR AuthService Token validation failed for user=rohit
+2025-11-01 08:22:20 INFO OrderService Order placed order_id=99271
+2025-11-01 08:22:21 ERROR PaymentService Failed to capture payment for order_id=99271
+2025-11-01 08:22:26 INFO DeliveryService Shipment request queued for order_id=99271
+2025-11-01 08:23:03 ERROR Database Connection timeout to DB cluster node=db03
+2025-11-01 08:23:04 ERROR Database Query failed: SELECT * FROM orders WHERE id=99271
+2025-11-01 08:23:05 WARN API-Gateway High response time 1240ms for /api/orders
+2025-11-01 08:23:12 INFO AuthService Session refreshed for user=alex
+2025-11-01 08:23:18 CRITICAL Database All replicas unreachable - failover initiated!
+2025-11-01 08:23:19 INFO FailoverService Switching primary DB to db02
+2025-11-01 08:23:22 ERROR PaymentService Payment retry failed for order_id=99271
+2025-11-01 08:23:23 INFO NotificationService Email sent to user=alex for order_id=99271
+2025-11-01 08:23:25 ERROR AuthService User token expired - re-authentication required
+2025-11-01 08:23:26 INFO AuthService Re-authentication success for user=alex
+2025-11-01 08:23:29 WARN API-Gateway Too many requests detected from IP=10.22.1.14
+2025-11-01 08:23:34 ERROR InventoryService Failed to lock stock for product_id=8842
+2025-11-01 08:23:39 ERROR Database Write failed: Orders table locked
+2025-11-01 08:23:41 INFO DeliveryService Courier assigned for order_id=99271
+2025-11-01 08:23:44 ERROR NotificationService Push notification failed for user=alex
+2025-11-01 08:23:49 ERROR AuthService Authentication service unreachable
+2025-11-01 08:23:51 INFO HealthCheckService All systems nominal
+2025-11-01 08:23:57 ERROR PaymentService Circuit breaker OPEN for PaymentService
+
